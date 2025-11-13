@@ -1,0 +1,50 @@
+/* assets/css/components/_highlights.css */
+
+.highlights-section {
+    background-color: var(--color-secondary); /* Usa o azul para o fundo */
+    color: var(--color-white); 
+    padding: var(--space-6); 
+    margin-bottom: var(--space-6); 
+    border-radius: 8px;
+    display: flex; /* Usaremos Flexbox para alinhar os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    justify-content: space-around; /* Espaça os itens uniformemente */
+    gap: var(--space-4); /* Espaçamento entre os blocos de destaque */
+    text-align: center; /* Centraliza o texto dentro de cada bloco */
+}
+
+.highlight-item {
+    flex: 1; /* Faz com que cada item ocupe o espaço disponível */
+    min-width: 250px; /* Garante um tamanho mínimo para cada item */
+    padding: var(--space-3); /* Espaçamento interno */
+}
+
+.highlight-item h2 {
+    font-size: var(--font-size-h1); /* Números grandes */
+    color: var(--color-white); /* Cor branca para o número */
+    margin-bottom: var(--space-1);
+}
+
+.highlight-item p {
+    font-size: var(--font-size-large);
+    color: var(--color-light-gray); /* Texto um pouco mais suave */
+    margin-bottom: 0; /* Remove margem extra do parágrafo */
+}
+
+/* Garante que os H2 dentro do highlight sejam brancos */
+.highlights-section h2 {
+    color: var(--color-white) !important;
+}
+
+/* Garante que os P dentro do highlight sejam brancos */
+.highlights-section p {
+    color: var(--color-white) !important;
+    text-align: center !important; /* Centraliza o texto do parágrafo */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .highlight-item {
+        min-width: 100%; /* Em mobile, cada item ocupa a largura total */
+    }
+}

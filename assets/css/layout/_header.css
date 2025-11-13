@@ -1,0 +1,63 @@
+/* assets/css/layout/_header.css */
+
+header {
+    background-color: #005f5f; 
+    background-color: var(--color-primary-dark); 
+    color: var(--color-white) !important; 
+    
+    /* Mais padding para dar espaço ao logo e navegação */
+    padding: var(--space-3) var(--space-4); 
+    border-bottom: 4px solid var(--color-secondary);
+    
+    display: flex; 
+    justify-content: space-between; /* Espaço entre logo e navegação */
+    align-items: center; 
+    
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo do Logo/Imagem (RESOLUÇÃO DE ESTICAMENTO) */
+header img {
+    height: 60px; /* Tamanho final do logo */
+    width: 60px; /* Garante que a largura seja igual à altura (proporção) */
+    object-fit: contain; /* Garante que a imagem se ajuste sem esticar */
+    margin-right: var(--space-4); 
+}
+
+/* 2. Navegação em Desktop (Links no canto direito) */
+nav {
+    display: none; /* Oculto por padrão em mobile */
+    align-items: center;
+    gap: var(--space-3); 
+}
+
+nav a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: var(--font-size-large); /* Aumenta a fonte para ser legível */
+    padding: var(--space-1) 0;
+}
+
+nav a:hover {
+    color: var(--color-secondary);
+    background-color: transparent;
+}
+
+
+/* 3. Ícone e Mobile */
+.menu-toggle {
+    display: block; 
+    font-size: var(--font-size-h2);
+    cursor: pointer;
+    color: var(--color-white);
+}
+
+@media (min-width: 992px) {
+    .menu-toggle {
+        display: none; 
+    }
+    nav {
+        display: flex; /* Mostra a navegação em desktop */
+    }
+}

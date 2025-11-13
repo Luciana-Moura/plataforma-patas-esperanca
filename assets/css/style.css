@@ -1,0 +1,59 @@
+/* style.css */
+
+/* 1. BASE / DESIGN SYSTEM */
+@import url('./base/_variables.css');
+@import url('./base/_reset.css');
+@import url('./base/_global.css'); /* Usaremos este arquivo para estilos de corpo e títulos */
+
+/* 2. LAYOUT (Estrutura) */
+@import url('./layout/_grid.css'); 
+@import url('./layout/_header.css');
+@import url('./layout/_footer.css');
+
+/* 3. COMPONENTES (Elementos Reutilizáveis) */
+@import url('./components/_buttons.css');
+@import url('./components/_cards.css');
+@import url('./components/_forms.css');
+@import url('./components/_highlights.css'); 
+
+/* Estilos Globais Padrões para a Página (Este bloco pode ser movido para _global.css se houver conflito) */
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-light-gray); /* Fundo claro e suave */
+    line-height: 1.6;
+    color: var(--color-dark-gray); /* Cor padrão de texto para ser legível */
+    padding-top: 0;
+}
+
+/* Centraliza o conteúdo */
+.container {
+    width: 100%;
+    max-width: 1140px; 
+    margin: 0 auto;
+    padding: 0 var(--space-4); /* Aumenta o padding lateral (32px) para não colar nas bordas */
+}
+
+/* Utility Class: Centralizar Texto */
+.text-center {
+    text-align: center;
+}
+
+/* Corrigindo Títulos e Alinhamento */
+h1 { 
+    font-size: var(--font-size-h2); /* Título principal reduzido */
+    margin-bottom: var(--space-4); 
+    padding-top: var(--space-4);
+    text-align: center;
+}
+
+h2 { 
+    font-size: var(--font-size-h3); /* Título H2 reduzido */
+    margin-bottom: var(--space-6); /* Aumenta o espaçamento abaixo do H2 */
+    text-align: center;
+}
+
+/* Corrigindo espaçamento de parágrafos que estava "bugado" */
+p {
+    margin-bottom: var(--space-3); /* 24px de margem abaixo do parágrafo */
+    text-align: left; 
+}

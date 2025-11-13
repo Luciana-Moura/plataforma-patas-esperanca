@@ -1,0 +1,37 @@
+/* assets/css/base/_variables.css */
+
+:root {
+    /* Cores (Verde, Azul, Branco) */
+    --color-primary: #2e8b57;       /* Verde Esmeralda (Principal) */
+    --color-primary-dark: #226b41;  /* Verde Escuro */
+    --color-secondary: #4682b4;     /* Azul Aço (Detalhes) */
+    --color-accent: #f0ad4e;        /* Laranja (Destaque) */
+
+    --color-white: #ffffff;         /* Branco Puro */
+    /* CORREÇÃO: Fundo Verde Pastel Suave, um pouco mais escuro */
+    --color-light-gray: #e8f5e9;    /* Um verde pastel mais perceptível */ 
+    --color-medium-gray: #d4e9d7;   /* Cinza/Verde bem clarinho */
+    --color-dark-gray: #343a40;     /* Cinza escuro para textos */
+    --color-neutral-dark: #333333;  /* Usado no rodapé */
+
+    /* Fontes */
+    --font-family-base: 'Arial', sans-serif;
+    --font-family-heading: 'Helvetica Neue', sans-serif;
+
+    /* Tamanhos de Fonte */
+    --font-size-small: 0.875rem; 
+    --font-size-base: 1rem;      
+    --font-size-large: 1.125rem; 
+    --font-size-h1: 2.5rem;      
+    --font-size-h2: 2rem;        
+    --font-size-h3: 1.75rem;     
+    --font-size-h4: 1.5rem;      
+
+    /* Espaçamentos */
+    --space-1: 0.5rem;  
+    --space-2: 1rem;    
+    --space-3: 1.5rem;  
+    --space-4: 2rem;    
+    --space-5: 2.5rem;  
+    --space-6: 3rem;    
+}

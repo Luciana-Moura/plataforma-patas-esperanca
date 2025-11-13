@@ -1,0 +1,41 @@
+/* assets/css/layout/_grid.css */
+
+
+/* 1. Container Principal (Centraliza o conteúdo na tela) */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--space-4); /* CORREÇÃO: Aumenta o padding lateral para 32px */
+    max-width: 1200px;
+}
+/* ... restante do código ... */
+
+/* ... restante do código aqui ... */
+
+/* 5. LAYOUT PRINCIPAL: Corrigindo o alinhamento de texto e conteúdo */
+@media (min-width: 992px) {
+    
+    /* ... código anterior ... */
+    
+    /* Garante que os títulos e textos das seções de grid fiquem alinhados */
+    .grid-12-columns {
+        grid-template-columns: repeat(12, 1fr); 
+        gap: var(--space-4); 
+    }
+    
+    /* Regra para posicionar as seções principais no layout */
+    #projetos-ativos { 
+        grid-column: span 9; 
+    }
+    
+    #apoio-ONG { 
+        grid-column: span 3; 
+    }
+    
+    /* Garante que os títulos da página principal não fiquem desorganizados */
+    h1, h2 {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

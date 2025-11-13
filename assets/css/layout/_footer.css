@@ -1,0 +1,56 @@
+/* assets/css/layout/_footer.css */
+
+footer {
+    background-color: var(--color-neutral-dark);
+    color: var(--color-white); 
+    
+    padding: var(--space-4) 0; 
+    text-align: center;
+    margin-top: var(--space-6); 
+}
+
+/* Regra específica para o bloco de contato dentro do footer */
+footer #contato.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* CORREÇÃO: Alinha as informações nas extremidades */
+    align-items: flex-start;
+    text-align: left;
+    margin: 0 auto; 
+    padding: 0 var(--space-4);
+}
+
+/* Títulos do footer */
+footer h3 {
+    font-size: var(--font-size-large);
+    margin-bottom: var(--space-2); 
+    color: var(--color-secondary); 
+    width: 100%; 
+    text-align: center; 
+}
+
+/* Estilo para a tag <address> (informações de contato) */
+footer address {
+    display: flex;
+    flex-direction: column;
+    /* CORREÇÃO: Alinha o bloco de texto de contato na esquerda do rodapé */
+    align-items: flex-start; 
+    margin-bottom: var(--space-3);
+}
+
+footer address p {
+    font-style: normal; 
+    font-size: var(--font-size-base);
+    margin: var(--space-1) 0;
+    text-align: left; /* Garante que o texto dentro da address não centralize */
+}
+
+/* Direitos autorais */
+footer p:last-child {
+    font-size: var(--font-size-small);
+    opacity: 0.8;
+    display: block;
+    width: 100%;
+    padding-top: var(--space-2);
+    text-align: center;
+}

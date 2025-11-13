@@ -1,0 +1,51 @@
+/* assets/css/base/_global.css */
+
+body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--color-dark-gray);
+    background-color: var(--color-light-gray); /* Fundo claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+    color: var(--color-dark-gray);
+    margin-bottom: var(--space-2);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: var(--font-size-h3); }
+h4 { font-size: var(--font-size-h4); }
+
+/* Links globais */
+a {
+    color: var(--color-secondary);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Botões (exemplo) */
+.button {
+    display: inline-block;
+    padding: var(--space-2) var(--space-3);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--color-primary-dark);
+}
