@@ -51,3 +51,19 @@ input:focus, select:focus {
     box-shadow: 0 0 0 3px var(--color-medium-gray);
     outline: none;
 }
+/* assets/css/components/_forms.css */
+
+/* ... Outros estilos ... */
+
+/* Estilo para erro de validação via JavaScript */
+.input-error {
+    border: 2px solid var(--color-danger) !important; /* Cor vermelha forte */
+    box-shadow: 0 0 5px var(--color-danger);
+}
+
+.error-message {
+    color: var(--color-danger);
+    font-size: var(--font-size-small);
+    margin-top: 5px;
+    font-weight: bold;
+}
